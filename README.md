@@ -3,11 +3,12 @@
 Retrieve json data from the server with Volley library and parse the data with Gson
 
 How to add Volley and Gson Lib :
-...
+
+```
 compile 'com.mcxiaoke.volley:library:1.0.19'
 compile 'com.google.code.gson:gson:2.6.1'
-...
 
+```
 How to get and parse data :
 
 ```
