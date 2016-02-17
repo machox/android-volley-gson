@@ -1,16 +1,15 @@
-# android-volley-gson is example of android app that retrieve data from the server with Volley library and parse the data with Gson
+#android-volley-gson
+======
+Retrieve json data from the server with Volley library and parse the data with Gson
 
 How to add Volley and Gson Lib :
 
 compile 'com.mcxiaoke.volley:library:1.0.19'
 compile 'com.google.code.gson:gson:2.6.1'
 
-Set Android permission on Manifest :
-
-<uses-permission android:name="android.permission.INTERNET" />
-
 How to get and parse data :
 
+```
 String url = "http://jsonplaceholder.typicode.com/posts";
 StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
         new Response.Listener<String>() {
@@ -40,3 +39,5 @@ RetryPolicy policy = new DefaultRetryPolicy(socketTimeout, DefaultRetryPolicy.DE
 stringRequest.setRetryPolicy(policy);
 
 requestQueue.add(stringRequest);
+
+```
